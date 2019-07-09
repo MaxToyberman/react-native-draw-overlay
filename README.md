@@ -30,18 +30,19 @@ Ask for draw over other apps permission.
 add 
 ```xml
 <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
-to AndroidManifest.xml
 ```
+to AndroidManifest.xml
+
 ```javascript
 import RNDrawOverlay from 'react-native-draw-overlay';
 
 // TODO: What to do with the module?
 RNDrawOverlay.askForDispalayOverOtherAppsPermission()
-			 .then(res => {
-				 // res will be true if permission was granted 
-			 })
-			 .catch(e => {
-				 // permission was declined
-			 })
+	     .then(res => {
+		 // res will be true if permission was granted 
+	     })
+	     .catch(e => {
+		 // permission was declined
+	     })
 ```
   
